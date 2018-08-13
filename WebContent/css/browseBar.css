@@ -1,0 +1,92 @@
+@charset "ISO-8859-1";
+
+.browseBar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ /* Dropdown Button */
+.dropbtn {
+    background-color: #356591;
+    color: #f3f3f3;
+    padding: 16px;
+    font-size: 16px;
+    min-width: 200px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #515455;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #f3f3f3;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #6f7071;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3a70a0;} 
+
+.searchForm{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 450px;
+	border: none;
+}
+
+.searchBar{
+	width: 60%;
+	float: left;
+	padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.searchBy{
+	width: 25%;
+    font-size: 16px;
+    padding: 16px;
+    border: 2px solid #356591;
+    color: white;
+    background: #356591;
+}
+
+.searchForm button{
+	float:left;
+	font-size:16px;
+	color: black;
+	background: #c6c6c6;
+	padding: 16px;
+	width: 15%;
+	border: none;
+}
+.searchForm button:hover{
+	background: #ddd;
+}
+.autocomplete-suggestions { border: 1px solid #2c2c2c; color: #474747; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }

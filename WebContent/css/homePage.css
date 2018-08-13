@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+
+h3{
+	font-size: 36px;
+	text-align: center;
+}
+h4,h5{
+	margin-top: 0;
+	font-size: 28px;
+	padding: 20px;
+	text-align: center;
+}
+h4{
+	background: #315c84;
+}
+h5{
+	background: #2b5275;
+}
+.whole{
+	margin-top: 0;
+ 	 margin-bottom: 0;
+	display:flex;
+	justify-content: center;
+	border:none;
+}
+
+.intro {
+/* 	border: 2px solid white; */
+	width: 75%;
+}
+
+.forArticles{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #393939;
+	width: 25%;
+	height: 100%;
+	border: none;
+	
+}
+
+.forNew, .forPlants{
+	height: 50%;
+	
+}
+
+.intro p{
+	padding-left: 35px;
+	padding-right: 35px;
+	font-size: 20px;
+	text-indent: 35px;
+}
+
+.forArticles p, a{
+	font-size: 20px;
+	padding-left: 20px;
+
+}

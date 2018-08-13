@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+h2{
+	font-size: 36px;
+}
+
+h2 img{
+	height: 10%;
+	width: 100%
+}
+
+.Header{
+	text-align: center;
+	font-size: 26px;
+}
+
+.Info{
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 16px;
+	text-indent: 30px;
+}
+
+.Summary{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 17px;
+}
+
+.darkback{
+	padding: 10px;
+	background: #393939;
+}
+
+.regback{
+	padding: 10px;
+}

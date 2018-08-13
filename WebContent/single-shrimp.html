@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- CSS -->
+<link rel='stylesheet' href='css/main.css' type='text/css' />
+<link rel='stylesheet' href='css/browseBar.css' type='text/css' />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='css/shrimpPage.css' type='text/css' />
+<link rel="shortcut icon" href="Images/sofishticatedLogo.ico" />
+<title id=title></title>
+</head>
+<body>
+	<h1>
+		<a class=homebutton href="index.html"><img
+			src="Images/sofishticated.png" alt="SoFishticated"></a>
+	</h1>
+	<div id="browseBar" class="browseBar">
+		<div class="dropdown">
+			<button class="dropbtn">Fishkeeping 101</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=fish-care">Caring for Fish</a> <a
+					href="article.html?tag=equipment">Equipment</a> <a
+					href="article.html?tag=nitrogen-cycle">Nitrogen Cycle</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Fish</button>
+			<div class="dropdown-content">
+				<a href="tropical-fish.html?sortBy=commonName&numVals=10&firstVal=0">Tropical
+					Fish</a> <a
+					href="coldwater-fish.html?sortBy=commonName&numVals=10&firstVal=0">Coldwater
+					Fish</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Shrimp</button>
+			<div class="dropdown-content">
+				<a
+					href="shrimp-list.html?type=neocaridina&sortBy=commonName&numVals=10&firstVal=0">Neocaridina</a>
+				<a
+					href="shrimp-list.html?type=caridina&sortBy=commonName&numVals=10&firstVal=0">Caridina</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Plants</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=plant-benefits">Planted Tank Benefits</a>
+				<a href="article.html?tag=plant-care">Plant Care</a> <a
+					href="plant-list.html?sortBy=name&numVals=10&firstVal=0">Aquatic
+					Plant Species</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Aquascaping</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=aquascape-intro">Intro to Aquascaping</a> <a
+					href="wood.html?sortBy=name&numVals=10&firstVal=0">Wood</a> <a
+					href="rocks.html?sortBy=name&numVals=10&firstVal=0">Rocks</a>
+			</div>
+		</div>
+		<div class="searchForm">
+			<form id="search_form" method="get" action="#">
+				<input type="text" class="searchBar" placeholder="Search here..."
+					id="searchText">
+				<!-- 				    <input type="submit" class="searchButton" value="search"> -->
+						
+				<select id="searchBy" class="searchBy">
+					<option value="fish">Fish</option>
+					<option value="plants">Plants</option>
+					<option value="shrimp">Shrimp</option>
+				</select>
+
+				<button type="submit" class="searchButton" value="search">
+					<i class="fa fa-search"></i>
+				</button>
+				<div class="autocomplete-suggestions"></div>
+			</form>
+		</div>
+	</div>
+
+	<br>
+	<h2 id=shrimpTitle class=shrimpTitle></h2>
+	<br>
+	<div class=picinfo>
+		<div id=shrimpPic class=shrimpPic></div>
+		<div>
+			<h3>General Info</h3>
+			<table id=shrimp_table class="shrimpTable">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Care Level</th>
+						<th>Water Parameters</th>
+						<th>Max Size</th>
+					</tr>
+				</thead>
+				<tbody id=shrimp_table_body></tbody>
+			</table>
+		</div>
+	</div>
+	<br>
+	<h4>Description</h4>
+	<p id=desc class=desc></p>
+	<br>
+
+
+	<!-- Load jQuery and Bootstrap JS -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="single-shrimp.js"></script>
+	<script src="searchBar.js"></script>
+
+
+</body>
+
+
+</html>

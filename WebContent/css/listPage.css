@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+
+.homebutton {
+	text-decoration: none;
+	text-align: center;
+	color: #f3f3f3;
+	font-size: 65px;
+}
+
+table{
+	border-collapse: collapse;
+	border: 3px solid #999999;
+	margin: 0 auto;
+	padding: 10px;
+	float: center;
+	clear: both;
+}
+
+tr img{
+	max-width: 200px;
+	max-height: 200px;
+	height: auto;
+	width: 100%;
+}
+
+th {
+    background-color: #356591;
+    color: white;
+    
+}
+
+th, td {
+	padding: 15px;
+    border: 1px solid #999999;
+}
+
+td a{
+	color: #f3f3f3;
+}
+
+tr:hover {background-color: #686868;}
+
+
+.pages{
+	width: 150px;
+	margin: 0 auto;
+	font-size: 18px;
+	list-style-type: none;
+	padding: 10px;
+	
+}
+
+.numRes {
+	width: 450px;
+	margin: 0 auto;
+	font-size: 18px;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.star_list, .genre_list {
+	margin: 0 auto;
+	font-size: 15px;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.pages li, .numRes li, .star_list li {
+	display: inline;
+	float: left;
+	padding: 10px;
+}
+
+.pages li a, .numRes li a, .starlist li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 30px;
+}
+
+.sort_link a{
+	color: #f3f3f3;
+}

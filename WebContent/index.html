@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>SoFishticated</title>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='css/main.css' type='text/css' />
+<link rel='stylesheet' href='css/browseBar.css' type='text/css' />
+<link rel='stylesheet' href='css/homePage.css' type='text/css' />
+<link rel="shortcut icon" href="Images/sofishticatedLogo.ico" />
+</head>
+
+
+
+<body>
+	<h1>
+		<a class=homebutton href="index.html"><img
+			src="Images/sofishticated.png" alt="SoFishticated"></a>
+	</h1>
+	<h2>Gaining profishiency in aquatic knowledge together.</h2>
+
+	<div id="browseBar" class="browseBar">
+		<div class="dropdown">
+			<button class="dropbtn">Fishkeeping 101</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=fish-care">Caring for Fish</a> <a
+					href="article.html?tag=equipment">Equipment</a> <a
+					href="article.html?tag=nitrogen-cycle">Nitrogen Cycle</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Fish</button>
+			<div class="dropdown-content">
+				<a href="tropical-fish.html?sortBy=commonName&numVals=10&firstVal=0">Tropical
+					Fish</a> <a
+					href="coldwater-fish.html?sortBy=commonName&numVals=10&firstVal=0">Coldwater
+					Fish</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Shrimp</button>
+			<div class="dropdown-content">
+				<a
+					href="shrimp-list.html?type=neocaridina&sortBy=commonName&numVals=10&firstVal=0">Neocaridina</a>
+				<a
+					href="shrimp-list.html?type=caridina&sortBy=commonName&numVals=10&firstVal=0">Caridina</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Plants</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=plant-benefits">Planted Tank Benefits</a>
+				<a href="article.html?tag=plant-care">Plant Care</a> <a
+					href="plant-list.html?sortBy=name&numVals=10&firstVal=0">Aquatic
+					Plant Species</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Aquascaping</button>
+			<div class="dropdown-content">
+				<a href="article.html?tag=aquascape-intro">Intro to Aquascaping</a>
+				<a href="wood.html?sortBy=name&numVals=10&firstVal=0">Wood</a> <a
+					href="rocks.html?sortBy=name&numVals=10&firstVal=0">Rocks</a>
+			</div>
+		</div>
+		<div class="searchForm">
+			<form id="search_form" method="get" action="#">
+				<input type="text" class="searchBar" placeholder="Search here..."
+					id="searchText">
+				<!-- 				    <input type="submit" class="searchButton" value="search"> -->
+
+				<select id="searchBy" class="searchBy">
+					<option value="fish">Fish</option>
+					<option value="plants">Plants</option>
+					<option value="shrimp">Shrimp</option>
+				</select>
+
+				<button type="submit" class="searchButton" value="search">
+					<i class="fa fa-search"></i>
+				</button>
+				<div class="autocomplete-suggestions"></div>
+			</form>
+		</div>
+	</div>
+
+	<div class=whole>
+		<div class=forArticles>
+			<div class=forNew>
+				<h4>New to fish keeping?</h4>
+				<p>Check out these articles:</p>
+				<ul>
+					<li><a href="article.html?tag=fish-care">Caring for Fish</a></li>
+					<li><a href="article.html?tag=equipment">Equipment</a></li>
+					<li><a href="article.html?tag=nitrogen-cycle">Nitrogen
+							Cycle</a></li>
+				</ul>
+			</div>
+
+			<div class=forPlants>
+				<h5>Thinking about adding plants to the tank?</h5>
+				<p>Gain some plant knowledge with these:</p>
+				<ul>
+					<li><a href="article.html?tag=plant-benefits">Planted Tank
+							Benefits</a></li>
+					<li><a href="article.html?tag=plant-care">Plant Care</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class=intro>
+			<h3>Little Fintroduction</h3>
+			<p>Hello and welcome to SoFishticated! As you can tell, we cannot
+				get enough of puns! This web app is designed to help new aquarium
+				hobbyists learn the ways of freshwater aquariums and potentially aid
+				experienced ones gain even more knowledge. Fishkeeping is a very fun
+				and relaxing hobby to have and is said to even reduce stress. Coming
+				back home after a long day and watching your fish happily go through
+				the simplicities of life that you help provide it is a very
+				enriching feeling. We sincerely hope this site can help you in any
+				way as you venture on your aquarium journey!</p>
+		</div>
+	</div>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- include jquery autocomplete JS  -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	<script src="searchBar.js"></script>
+
+</body>
+</html>

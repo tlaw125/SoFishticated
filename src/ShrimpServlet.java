@@ -64,7 +64,7 @@ public class ShrimpServlet extends HttpServlet {
 			if (connection == null)
 				out.println("dbcon is null.");
 
-			String query = "SELECT id, commonName, type, careLvl, imagePath FROM shrimp WHERE type=? GROUP BY commonName ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
+			String query = "SELECT id, commonName, type, careLvl, imagePath FROM shrimp WHERE type=? GROUP BY id ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
 
 			// declare statement
 			PreparedStatement statement = connection.prepareStatement(query);

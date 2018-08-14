@@ -64,7 +64,7 @@ public class FishListServlet extends HttpServlet {
 			if (connection == null)
 				out.println("dbcon is null.");
 
-			String query = "SELECT id, commonName, family, careLvl, imagePath FROM fish WHERE type=? GROUP BY commonName ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
+			String query = "SELECT id, commonName, family, careLvl, imagePath FROM fish WHERE type=? GROUP BY id ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
 
 			// declare statement
 			PreparedStatement statement = connection.prepareStatement(query);

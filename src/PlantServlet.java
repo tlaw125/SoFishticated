@@ -66,7 +66,7 @@ public class PlantServlet extends HttpServlet {
 			if (connection == null)
 				out.println("dbcon is null.");
 
-			String query = "SELECT id, name, type, careLvl, imagePath FROM plants GROUP BY name ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
+			String query = "SELECT id, name, type, careLvl, imagePath FROM plants GROUP BY id ORDER BY MAX(" + sortAttr + ") " + sortAttr2 + " LIMIT " + limit + " OFFSET " + offset;
 
 			// declare statement
 			PreparedStatement statement = connection.prepareStatement(query);

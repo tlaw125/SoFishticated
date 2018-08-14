@@ -1,38 +1,30 @@
 @charset "ISO-8859-1";
 
 .picinfo{
-	position:relative; 
-	padding: 25px;
-	padding-left:500px;
-	height: 400px;
-	
+	display:flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .fishPic{
-	position:absolute;
-	left:0;
-	top:0;
-	padding-left: 25px;
-	max-height: 450px;
-	max-width: 450px;
+	align-self: center;
 }
 
 .fishPic img{
 	max-height: 450px;
-	height: auto;
-	width: 100%;
+	max-width: 450px;
 	border:5px solid #c4c4c4;
 }
 
 
 .fishTable{
-	position:relative; 
-	padding-left: 600px;
-	width:100%;
+	padding: 25px;
+	width: 100%;
 }
 
 table{
-	align: center;
+	width: 100%;
 	border-collapse: collapse;
 	border: 5px solid #c4c4c4;
 	margin: 0 auto;

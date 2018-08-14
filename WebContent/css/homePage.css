@@ -16,17 +16,34 @@ h4{
 h5{
 	background: #2b5275;
 }
+
+.introPic {
+	width:100%;
+	height:100%;
+}
+
+.fintro{
+	widtch:100%;
+	height:100%;
+}
+
+.introPic img{
+	width:100%;
+}
 .whole{
 	margin-top: 0;
- 	 margin-bottom: 0;
+ 	margin-bottom: 0;
 	display:flex;
 	justify-content: center;
 	border:none;
 }
 
-.intro {
+.fintro {
 /* 	border: 2px solid white; */
 	width: 75%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .forArticles{

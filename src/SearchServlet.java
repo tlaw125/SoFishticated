@@ -81,20 +81,20 @@ public class SearchServlet extends HttpServlet {
 			if(searchBy.equals("Fish")) {
 				query = "SELECT id, commonName, family, careLvl, imagePath FROM fish "  
 						+ "WHERE MATCH (commonName) AGAINST (? IN BOOLEAN MODE) " 
-						+ "GROUP BY commonName ORDER BY MAX(commonName) ASC LIMIT "
+						+ "GROUP BY id ORDER BY MAX(commonName) ASC LIMIT "
 						+ limit + " OFFSET " + offset;
 			}
 
 			else if(searchBy.equals("Plants")) {
 				query = "SELECT id, name, type, careLvl, imagePath FROM plants "  
 						+ "WHERE MATCH (name) AGAINST (? IN BOOLEAN MODE) " 
-						+ "GROUP BY name ORDER BY MAX(name) ASC LIMIT "
+						+ "GROUP BY id ORDER BY MAX(name) ASC LIMIT "
 						+ limit + " OFFSET " + offset;
 			}
 			else {
 				query = "SELECT id,commonName, type, careLvl, imagePath FROM shrimp "  
 						+ "WHERE MATCH (commonName) AGAINST (? IN BOOLEAN MODE) " 
-						+ "GROUP BY commonName ORDER BY MAX(commonName) ASC LIMIT "
+						+ "GROUP BY id ORDER BY MAX(commonName) ASC LIMIT "
 						+ limit + " OFFSET " + offset;
 			}
 

@@ -4,20 +4,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
+
  /* Dropdown Button */
 .dropbtn {
     background-color: #356591;
     color: #f3f3f3;
     padding: 16px;
     font-size: 16px;
-    min-width: 200px;
+    width: 200px;
     border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
     display: inline-block;
 }
 
@@ -53,12 +54,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 450px;
+	max-width: 350px;
 	border: none;
 }
 
 .searchBar{
-	width: 60%;
+	width: 55%;
 	float: left;
 	padding: 16px;
     font-size: 16px;
@@ -66,7 +67,7 @@
 }
 
 .searchBy{
-	width: 25%;
+	width: 30%;
     font-size: 16px;
     padding: 16px;
     border: 2px solid #356591;
